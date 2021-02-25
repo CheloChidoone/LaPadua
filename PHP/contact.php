@@ -1,6 +1,6 @@
 <?php 
 
-$para = "heycleanmx@hotmail.com , luisjavier004@hotmail.com";
+$para = "lapadua@hotmail.com , lapaduacontacto@hotmail.com";
 
 $asunto = "Mensaje desde web";
 

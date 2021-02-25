@@ -27,7 +27,7 @@ if($_POST){
             
             $para = $dbemail;
             
-            $de = "luisjavier004@hotmail.com";
+            $de = "lapadua@hotmail.com";
 
             $asunto = "Mensaje desde web, Olvido Contraseña";
 
