@@ -1,0 +1,5 @@
+<div class="tituloSection slideanim">
+    <div class="line start"></div>
+    <h2>[@titulo]</h2>
+    <div class="line end"></div>
+</div>

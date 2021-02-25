@@ -1,0 +1,17 @@
+<div class="platillo" data-id="[@idPlato]">
+    <figure class="imagenPlatillo">
+        <img src="[@imagen]" alt="Imagen Platillo">
+    </figure>
+    <div class="infoPlatillo">
+           <p class="producto">[@producto]</p>
+           <p class="precio">[@precio]</p>
+           <p class="descripcion">[@descripcion]</p>
+           <input class="cantidad" type="number" min="1" value="1" max="100">
+    </div>
+
+    <div class="botonesplatillo"> 
+        <p class="disponible">[@disponibilidad]
+        </p>
+        <button class="agregar">Agregar</button>
+    </div>
+</div>

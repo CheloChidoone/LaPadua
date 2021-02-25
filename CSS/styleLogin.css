@@ -1,0 +1,219 @@
+#modal{
+    position: absolute;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    display: none;
+    min-height: 340px;
+}
+
+.show{
+    animation: fadeIn 0.5s ease-out;
+    display: flex !important;
+    opacity: 1 !important;
+}
+
+@keyframes fadeIn {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    100% {
+        display: flex;
+        opacity: 1 ;
+    }
+}
+
+#formOlvido{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenido{
+    background-color: var(--blueColor);
+    height: 70%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    border:  groove var(--whiteColor) 8px;
+    border-radius: 15px;
+    max-height: 450px;
+}
+
+@media only screen and (min-width: 1100px) {
+    .contenido{
+        max-height: none;
+    }
+}
+
+
+
+.instrucciones{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.instrucciones h3{
+    color: var(--whiteColor);
+    margin-bottom: 10%;
+    text-align: center;
+    font-family: var(--bodoniBold);
+    font-size: 5.5vw;
+}
+
+.instrucciones input{
+    color: var(--whiteColor);
+    background: none;
+    border: none;
+    border-bottom: 6px var(--whiteColor) solid;
+    width: 100%;
+    
+}
+
+.instrucciones input::placeholder{
+    color: rgb(255, 255, 255);
+    opacity: 0.8;
+}
+
+.instrucciones .formCampo{
+    width: 80%;
+    margin-bottom: 15%;
+}
+
+.botonesModal{
+    height: 8%;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+
+.botonesModal .formCampo{
+    align-self: center;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 90%; 
+}
+
+.botonesModal .formCampo input{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: var(--orangeColor2);
+    color: var(--whiteColor);
+    border : none;
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+}
+
+#modal input{
+    font-size: 4.3vw;
+}
+
+
+
+@media only screen and (min-width: 500px) {
+    .instrucciones h3{
+        font-size: 4.5vw;
+    }
+    
+    #modal input{
+        font-size: 3.8vw;
+    }
+}
+
+
+@media only screen and (min-width: 700px) {
+    .botonesModal .formCampo{
+        width: 60%;
+    }
+    .instrucciones h3{
+        font-size: 4vw;
+    }
+    
+    #modal input{
+        font-size: 3.1vw;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .botonesModal.formCampo{
+        width: 50%;
+    }
+    .instrucciones h3{
+        font-size: 3vw;
+    }
+    #modal input{
+        font-size: 2vw;
+    }
+}
+
+
+#formLogin{
+    width: 75%;
+}
+
+#formLogin .contra {
+    margin-bottom: 2%;
+}
+
+@media only screen and (min-width: 900px) {
+    #formLogin .contra {
+        margin-bottom: 1%;
+    }
+}
+
+#formLogin .recordar{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    height: 3vh;
+    margin: 0;
+}
+
+form .recordar input{
+    width: 20px;
+    height: 90%;
+}
+
+form .recordar label{
+    font-size: 1.3em;
+    color: var(--blueColor) !important;
+    margin-left: 1%;
+}
+
+#mensaje{
+    display: none;
+}
+
+#mensaje2{
+    display: none;
+    margin-top: 3%;
+}
+
+
+

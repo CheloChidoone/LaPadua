@@ -1,0 +1,18 @@
+Instrucciones de uso:
+
+1. Crear base de datos llamada 'sistema_orden_restaurante' e importar el archivo 
+sistema_orden_restaurante.sql (ubicado en la carpeta SQL) para llenar la estructura y datos de la base de datos
+
+2. En la página principal del sistema se puede ver una sección de slider de bienvenida, 
+una sección de sobre nosotros, una galería interactiva con imagenes y un vídeo, una sección de redes sociales
+y una sección de contacto donde se puede enviar un mensaje de contacto
+
+3. En la página existe la opción de Login que te llevará a la página de inicio de sesión donde puedes
+iniciar sesión o registrar un nuevo usuario
+
+4. En la página existe la opción de Menu que te llevará a la página del menú donde puedes ver todos los 
+productos del restaurante y añadir los que desees a tu carrito
+
+5. En la página existe la opción de Carrito que te llevará a ver tu carrito donde se mostrará todos los productos
+que tienes agregados, en esta página se puede modificar la cantidad elegida de cada producto y se calculan los subtotales
+y el total de la orden que también incluye un porcentaje a seleccionar de propina que se calcula y se agrega a la orden para poder terminarla

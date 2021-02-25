@@ -1,0 +1,15 @@
+@media only screen and (min-width: 900px) {
+    .formComplete  .formCampo input[type="text"],
+    .formComplete  .formCampo input[type="password"],
+    .formComplete  .formCampo input[type="email"],
+    .formComplete  .formCampo input[type="tel"],
+    .formComplete  .formCampo input[type="number"],
+    .formComplete  .formCampo textarea{
+        margin-bottom: 1%;
+    }
+}
+
+#mensaje{
+    display: none;
+    align-self: center;
+}

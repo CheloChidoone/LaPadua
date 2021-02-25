@@ -1,0 +1,196 @@
+:root {    
+    --headerHeight : 70px;
+}
+
+header {
+    position: fixed;
+    max-height: var(--headerHeight);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,105,41,1)), color-stop(53%, rgba(250,117,0,1)), color-stop(100%, rgba(162,48,7,1)));
+background: -webkit-linear-gradient(top, rgba(255,105,41,1) 0%, rgba(250,117,0,1) 53%, rgba(162,48,7,1) 100%);
+background: -o-linear-gradient(top, rgba(255,105,41,1) 0%, rgba(250,117,0,1) 53%, rgba(162,48,7,1) 100%);
+background: -ms-linear-gradient(top, rgba(255,105,41,1) 0%, rgba(250,117,0,1) 53%, rgba(162,48,7,1) 100%);
+background: linear-gradient(to bottom, rgba(255,105,41,1) 0%, rgba(250,117,0,1) 53%, rgba(162,48,7,1) 100%);
+    width: 100%;  
+    overflow: hidden;
+    z-index: 500;
+    box-sizing: border-box;
+    -webkit-transition: max-height 0.6s;
+    -moz-transition: max-height 0.6s;
+    transition: max-height 0.6s;
+}
+
+.active-header{
+    max-height: 500px;
+}
+
+header #headerUp {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--whiteColor);
+}
+
+header #headerUp figure {
+    position: relative;
+    height: var(--headerHeight);
+/*    background-color: red;*/
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0; 
+    margin-left: 25px;
+    width: 200px;
+}
+
+header #headerUp figure img {
+    position: relative;
+    height: 85%;
+}
+
+header #headerUp figure #titulosLogo{
+    height: height: var(--headerHeight);
+    width: 100%;
+    padding-left: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header #headerUp figure #titulosLogo #heyTi{
+    font-family: 'lactosaregular';
+    font-size: 1.6em;
+    margin: 0;
+}
+
+header #headerUp figure #titulosLogo #espaciosTi{
+    font-family: 'bodoni_sans_text_regularRg', sans-serif !important;
+     margin: 0;
+}
+
+header #headerUp button {
+    position: relative;
+}
+
+
+#myTopnav {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#myTopnav ul li {
+    list-style-type: none;
+    text-align: center;
+    padding-bottom: 8px;
+}
+
+#myTopnav ul li a {
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    align-self: center;
+    color: var(--whiteColor);
+}
+
+#myTopnav ul li a:hover {
+    color: var(--darkColor);
+    background-color: var(--whiteColor);
+    border-radius: 50px;
+}
+
+
+
+#espacio {
+    width: 100%;
+    height: var(--headerHeight);
+}
+
+@media only screen and (min-width: 450px) {
+    header #headerUp figure {
+        width: 200px;
+    }
+}
+
+@media only screen and (min-width: 1050px) {
+    html,body{
+        font-size: 14px
+    }
+    
+    #menuButton{
+        display: none;
+    }
+    
+    header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+        justify-content: space-between;
+    }
+    
+
+    header #headerUp figure {
+        margin-left: 15%;
+        width: 250px;
+    }
+    
+    #myTopnav{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        margin-right: 2%;
+    }
+    #myTopnav ul li {
+        display: inline;
+        padding: 0px;
+    }
+    #myTopnav ul li a{
+        padding: 0px 10px;
+    }
+    
+    #myTopnav ul li:nth-last-child(1) span {
+        top: 5px;
+    }
+}
+
+
+@media only screen and (min-width: 1440px){
+    :root {
+        --headerHeight : 80px;
+    }
+    #myTopnav ul li a {
+        font-size: 21px;
+    }
+    header #headerUp figure {
+        margin-left: 15%;
+        width: 350px;
+    }
+    header #headerUp figure #titulosLogo{
+        font-size: 1.4em;
+    }
+
+    header #headerUp figure #titulosLogo #heyTi{
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (min-width: 2000px){
+    :root {
+        --headerHeight : 100px;
+    }
+    #myTopnav ul li a {
+        font-size: 26px;
+    }
+    
+    header #headerUp figure {
+        margin-left: 15%;
+        width: 400px;
+    }
+}

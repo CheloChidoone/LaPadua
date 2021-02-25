@@ -1,0 +1,491 @@
+#cont{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenido{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo{
+    position: relative;
+    left: -10%;
+    color: var(--darkColor);
+    font-size: 7.1vw;
+    padding: 5% 0;
+}
+
+.info {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 4vw;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center; 
+}
+
+
+
+table {
+position: relative;
+  table-layout: fixed;
+  width: 100%;
+  white-space: nowrap;
+}
+table td {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+tr td{
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    height: 100%;
+    
+}
+
+table td, table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+tr td:nth-child(3) p{
+    font-size: 4.5vw;
+    margin-bottom: 5%;
+}
+
+tr td:nth-child(3) button{
+    color: red;
+    border-radius: 10px;
+    background: #fff;
+    padding: 5%;
+    height: 2em;
+    line-height: .08em;
+}
+
+table tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+table tr:nth-child(odd) td:nth-child(3) button{
+    background-color: #f2f2f2;
+}
+
+table tr:hover {background-color: #ddd;}
+
+tr td:nth-child(2) input{
+    width: 60%;
+}
+
+table .cantidad{
+    font-size: 4.5vw;
+}
+
+table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: var(--grayColor2);
+    color: white;
+}
+
+table input[type="number"]{
+    width: 70%;
+    height: 30px;
+    text-align: center;
+}
+
+
+/* Column widths are based on these cells */
+.column-pedido {
+  width: 50%;
+}
+.column-cantidad {
+  width: 20%;
+}
+.column-total {
+  width: 30%;
+}
+
+.total{
+    position: relative;
+    align-self: flex-end;
+    width: 50%;
+    height: 200px;
+    background-color: var(--grayColor);
+    color: var(--darkColor2);
+    margin: 10px 0px;
+    display: grid;
+    grid-template-rows: 80% 20%;
+}
+
+.datos{
+    padding: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 5%;
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
+
+.datos :nth-child(odd){
+    font-weight: bold;
+}
+
+.datos input{
+    width: 85%
+}
+
+.gridCenter{
+    align-self: center;
+    justify-self: center; 
+}
+
+.total button{
+    width: 100%;
+    background-color: var(--blueColor);
+    color: var(--whiteColor);
+}
+
+@media only screen and (min-width: 400px){
+    .titulo{
+        font-size: 6.5vw;
+        padding: 4% 0;
+    }
+    
+    .info {
+        font-size: 3.8vw;
+    }
+    
+    table .cantidad{
+        font-size: 4.2vw;
+    }
+    
+    table td, table th {
+        padding: 5px;
+    }
+    
+    tr td:nth-child(3) p{
+        font-size: 4vw;
+    }
+    
+    tr td:nth-child(3) button{
+        font-size: 3.8vw;
+    }
+}
+
+@media only screen and (min-width: 500px){
+    .titulo{
+        font-size: 5vw;
+        padding: 3.5% 0;
+    }
+    
+    .info {
+        font-size: 3.2vw;
+    }
+    
+    table .cantidad{
+        font-size: 3.7vw;
+    }
+    
+    tr td:nth-child(3) p{
+        font-size: 3.7vw;
+    }
+    
+    tr td:nth-child(3) button{
+        font-size: 3.2vw;
+    }
+    
+    .total{
+        height: 220px;
+    }
+}
+
+@media only screen and (min-width: 600px){
+    .total{
+        height: 250px;
+    }
+    
+    tr td:nth-child(2) input{
+        width: 55%;
+    }
+    
+    table .cantidad{
+        font-size: 3.4vw;
+    }
+    
+    tr td:nth-child(3) p{
+        font-size: 3.5vw;
+    }
+    
+    tr td:nth-child(3) button{
+        font-size: 2.8vw;
+    }
+}
+
+@media only screen and (min-width: 700px){
+    .titulo{
+        font-size: 4vw;
+        padding: 3% 0;
+    }
+    
+    .info {
+        font-size: 2.8vw;
+    }
+    
+    tr td:nth-child(2) input{
+        width: 50%;
+    }
+    
+    table .cantidad{
+        font-size: 3vw;
+    }
+    
+    table td, table th {
+        padding: 4px;
+    }
+    
+    tr td:nth-child(3) p{
+        font-size: 2.9vw;
+    }
+    
+    .total{
+        height: 260px;
+    }
+    
+    tr td:nth-child(3) button{
+        font-size: 2.5vw;
+    }
+    
+    .total{
+        width: 40%;
+    }
+}
+
+@media only screen and (min-width: 900px){
+    .titulo{
+        font-size: 3.7vw;
+        padding: 2% 0;
+    }
+    
+    .info {
+        font-size: 2.3vw;
+    }
+    
+    tr td:nth-child(3) {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    table .cantidad{
+        font-size: 2.5vw;
+    }
+    
+    tr td:nth-child(3) p{
+        font-size: 2.3vw;
+        margin: 0;
+        padding: 0;
+    }
+    
+    tr td:nth-child(3) button{
+        font-size: 2vw;
+        padding: 0;
+        width: 37%;
+    }
+    
+    .total{
+        height: 250px;
+        width: 35%;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .titulo{
+        font-size: 3.4vw;
+    }
+    
+    .info {
+        font-size: 1.9vw;
+    }
+    
+    tr td:nth-child(3) p{
+        font-size: 1.8vw;
+    }
+    
+    tr td:nth-child(2) input{
+        width: 40%;
+    }
+    
+    table .cantidad{
+        font-size: 2vw;
+    }
+    
+    tr td:nth-child(3) button{
+        font-size: 1.7vw;
+    }
+    
+    .total{
+        height: 270px;
+        width: 30%;
+    }
+}
+
+@media only screen and (min-width: 1440px){
+    .titulo{
+        font-size: 2.8vw;
+        padding: 1.5% 0;
+    }
+    
+    .info {
+        font-size: 1.7vw;
+    }
+    
+    table .cantidad{
+        font-size: 1.7vw;
+    }
+    
+    tr td:nth-child(3) p{
+        font-size: 1.6vw;
+    }
+    
+    .total{
+        height: 280px;
+    }
+    
+    tr td:nth-child(3) button{
+        font-size: 1.5vw;
+        width: 30%;
+        margin: 1% 0 1% 0;
+    }
+}
+
+@media only screen and (min-width: 1600px){
+    .titulo{
+        font-size: 2.7vw;
+    }
+    
+    .info {
+        font-size: 1.8vw;
+    }
+    
+    .total{
+        height: 285px;
+    }
+    
+    .column-cantidad {
+      width: 15%;
+    }
+    .column-total {
+      width: 35%;
+    }
+    
+}
+
+@media only screen and (min-width: 1800px){
+    .titulo{
+        font-size: 2.5vw;
+        padding: 1.3% 0;
+    }
+    
+    .info {
+        font-size: 1.4vw;
+    }
+    
+    table .cantidad{
+        font-size: 1.5vw;
+    }
+    
+    tr td:nth-child(2) input{
+        width: 50%;
+    }
+    
+    .total{
+        height: 285px;
+    }
+    
+    .column-cantidad {
+      width: 15%;
+    }
+    .column-total {
+      width: 35%;
+    }
+    
+    tr td:nth-child(3) button{
+        height: 1.5em;
+        padding: 3.2%;
+    }
+}
+
+@media only screen and (min-width: 2000px){
+    .titulo{
+        font-size: 2.4vw;
+        padding: 1.1% 0;
+    }
+    
+    .info {
+        font-size: 1.3vw;
+    }
+    
+    tr td:nth-child(3) p {
+        font-size: 1.6vw;
+        margin-bottom: 1%;
+    }
+    
+    .total{
+        height: 400px;
+        width: 25%;
+    }
+    
+    .column-cantidad {
+      width: 10%;
+    }
+    
+    .column-total {
+      width: 40%;
+    }
+}
+
+#modalito{
+    position: absolute;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    display: none;
+}
+
+#modalito #cont{
+    width: 80vw;
+    padding: 5%;
+    text-align: center;
+    background-color: #00c100;
+    color: #fff;
+    font-size: 2vw
+}
+
+.showM{
+    display: flex !important;
+}

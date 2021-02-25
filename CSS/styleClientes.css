@@ -1,0 +1,407 @@
+section{
+    margin: 2%;
+}
+
+#tablaClientes{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#modClientes{
+    width: 40%;
+    background-color: var(--orangeColor2);
+    color: #fff;
+    margin: 2%;
+    font-size: 4.2vw;
+    border-radius: 10px;
+    padding: 2%;
+}
+
+.selected{
+    background-color: #65d171 !important;
+    color: #fff !important;
+}
+
+table {
+position: relative;
+  table-layout: fixed;
+  width: 100%;
+  white-space: nowrap;
+}
+table td {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+tr td{
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    height: 100%;
+    
+}
+
+table td, table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+table tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+table tr:hover {background-color: #ddd;}
+
+table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: var(--grayColor2);
+    color: white;
+}
+
+table input[type="number"]{
+    width: 70%;
+    height: 30px;
+    text-align: center;
+}
+
+@media only screen and (min-width: 400px){
+    table {
+        font-size: 4.2vw;
+    }
+    #modClientes{
+        font-size: 4vw;
+    }
+}
+
+@media only screen and (min-width: 500px){
+    
+    table {
+        font-size: 3.7vw;
+    }
+    #modClientes{
+        font-size: 3.5vw;
+    }
+    
+}
+
+@media only screen and (min-width: 600px){
+    
+    table {
+        font-size: 3.4vw;
+    }
+}
+
+@media only screen and (min-width: 700px){
+    table .cantidad{
+        font-size: 3vw;
+    }
+    
+    table td, table th {
+        padding: 4px;
+    }
+    
+    #modClientes{
+        font-size: 3vw;
+        padding: 1%;
+    }
+    
+}
+
+@media only screen and (min-width: 900px){
+    
+    table {
+        font-size: 2.5vw;
+    }
+    
+    #modClientes{
+        font-size: 2.8vw;
+        padding: 1%;
+    }
+
+}
+
+@media only screen and (min-width: 1200px){
+    
+    table {
+        font-size: 2vw;
+    }
+    
+    #modClientes{
+        width: 30%;
+        font-size: 2.4vw;
+        padding: 1%;
+    }
+    
+}
+
+@media only screen and (min-width: 1440px){
+    
+    table {
+        font-size: 1.7vw;
+    }
+    
+    #modClientes{
+        font-size: 2vw;
+    }
+}
+
+
+@media only screen and (min-width: 1800px){
+    
+    table {
+        font-size: 1.5vw;
+    }
+    
+}
+
+.modalBlue{
+    position: absolute;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    display: none;
+}
+
+.show{
+    animation: fadeIn 0.5s ease-out;
+    display: flex !important;
+    opacity: 1 !important;
+}
+
+@keyframes fadeIn {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    100% {
+        display: flex;
+        opacity: 1 ;
+    }
+}
+
+.modalBlue .modalBlueContent{
+    width: 80%;
+    height: 90%;
+    background-color: var(--blueColor);
+    overflow-y: scroll;
+    display: flex;
+    justify-content: center;
+}
+
+.modalBlue .modalBlueContent .formBlue{
+    margin-top: 2%;
+    width: 100%;
+    font-size: 4vw;
+}
+
+.modalBlue .modalBlueContent .formBlue .inputsBlue{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.modalBlue .modalBlueContent .formBlue .inputsBlue .formCampoBlue{
+    width: 100%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+.modalBlue .modalBlueContent .formBlue .inputsBlue .formCampoBlue input,
+.modalBlue .modalBlueContent .formBlue .inputsBlue .formCampoBlue textarea{
+    text-overflow: ellipsis; 
+    width: 85%;
+    background: none;
+    border: none;
+    color: var(--whiteColor);
+    border-bottom: 2px solid var(--whiteColor);
+}
+
+.modalBlue .modalBlueContent .formBlue .inputsBlue .formCampoBlue textarea{
+    border: 2px solid var(--whiteColor); 
+}
+
+.modalBlue .modalBlueContent .formBlue .inputsBlue .formCampoBlue input::placeholder,
+.modalBlue .modalBlueContent .formBlue .inputsBlue .formCampoBlue textarea::placeholder{
+    color: rgb(255, 255, 255);
+    opacity: 0.8;
+}
+
+.modalBlue .modalBlueContent .formBlue .inputsBlue .doubleColumn{
+    width: 90%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.modalBlue .modalBlueContent .formBlue .botonesBlue{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-evenly;
+    justify-content: space-evenly;
+}
+
+.modalBlue .modalBlueContent .formBlue .botonesBlue input{
+    width: 40%;
+    background-color: var(--orangeColor2);
+    color: #fff;
+    margin: 2%;
+    border-radius: 10px;
+    padding: 2%;
+}
+
+.modalBlue .modalBlueContent .tituloFormBlue{
+    color: var(--whiteColor);
+    font-size: 6vw;
+    margin-bottom: 2%;
+}
+
+#eliminar{
+    background-color: #ff5353;
+}
+
+#guardar{
+    background-color: #36d848;
+}
+
+@media only screen and (min-width: 400px){
+    
+    .modalBlue .modalBlueContent .formBlue{
+        font-size: 3.8vw;
+    }
+    
+    .modalBlue .modalBlueContent .tituloFormBlue{
+        font-size: 5.2vw;
+    }
+
+}
+
+@media only screen and (min-width: 500px){
+    
+    .modalBlue .modalBlueContent .formBlue{
+        font-size: 3.4vw;
+    }
+    
+    .modalBlue .modalBlueContent .tituloFormBlue{
+        font-size: 5vw;
+    }
+    
+    .modalBlue .modalBlueContent .formBlue .inputsBlue .formCampoBlue{
+        margin-bottom: 4%;
+    }
+    
+}
+
+@media only screen and (min-width: 600px){
+    
+    .modalBlue .modalBlueContent .formBlue{
+        font-size: 3.2vw;
+    }
+    
+    .modalBlue .modalBlueContent .tituloFormBlue{
+        font-size: 4.6vw;
+    }
+    
+    .modalBlue .modalBlueContent .formBlue .botonesBlue input{
+        width: 30%;
+    }
+
+}
+
+@media only screen and (min-width: 700px){
+    
+    .modalBlue .modalBlueContent .formBlue{
+        font-size: 3vw;
+    }
+    
+    .modalBlue .modalBlueContent .tituloFormBlue{
+        font-size: 4.2vw;
+    }
+    
+    .modalBlue .modalBlueContent .formBlue .inputsBlue .formCampoBlue{
+        margin-bottom: 3%;
+    }
+    
+}
+
+@media only screen and (min-width: 900px){
+    
+    .modalBlue .modalBlueContent .formBlue{
+        font-size: 2.8vw;
+    }
+    
+    .modalBlue .modalBlueContent .tituloFormBlue{
+        font-size: 4vw;
+    }
+    
+    .modalBlue .modalBlueContent .formBlue .botonesBlue input{
+        width: 25%;
+    }
+
+}
+
+@media only screen and (min-width: 1200px){
+    
+    .modalBlue .modalBlueContent .formBlue{
+        font-size: 2.4vw;
+    }
+    
+    .modalBlue .modalBlueContent .tituloFormBlue{
+        font-size: 3.8vw;
+    }
+    
+    .modalBlue .modalBlueContent .formBlue .inputsBlue .formCampoBlue{
+        margin-bottom: 2%;
+    }
+    
+}
+
+@media only screen and (min-width: 1440px){
+    
+    .modalBlue .modalBlueContent .formBlue{
+        font-size: 2vw;
+    }
+    
+    .modalBlue .modalBlueContent .tituloFormBlue{
+        font-size: 3.6vw;
+    }
+    
+    .modalBlue .modalBlueContent .formBlue .botonesBlue input{
+        width: 20%;
+    }
+}
+
+
+@media only screen and (min-width: 1800px){
+    
+    .modalBlue .modalBlueContent .formBlue{
+        font-size: 1.8vw;
+    }
+    
+    .modalBlue .modalBlueContent .tituloFormBlue{
+        font-size: 3.4vw;
+    }
+    
+}
+

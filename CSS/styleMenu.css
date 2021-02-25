@@ -1,0 +1,928 @@
+#mensaje{
+    align-self: center;
+    margin-top: 2%;
+    display: none;
+}
+
+#menuSection{    
+    position: relative;
+    width: 100%;
+}
+
+#secciones{
+    width: 100%;
+}
+
+.seccion{
+    display: flex;
+    flex-direction: column;
+}
+
+.seccion .tituloSection{
+    margin: 5% 0;
+    padding: 0;
+}
+
+.seccion .tituloSection h2{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.platillos{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.platillo{
+    width: 80%;
+    display: grid;
+    grid-template-rows: 45% 40% 15%;
+    border-radius: 30px 30px 0px 0px;
+    background-color: var(--grayColor);
+    box-sizing: border-box;
+    margin-bottom: 5%;
+    padding-bottom: 2%;
+}
+
+.platillo .imagenPlatillo{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    border-radius: 30px 30px 0px 0px;
+}
+
+.platillo .imagenPlatillo img{
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.platillo .infoPlatillo{
+    color: var(--darkColor);
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    box-sizing: border-box;
+    align-items: center;
+    justify-items: center;
+    grid-row-gap: 5%;
+}
+
+.platillo .infoPlatillo{
+    font-size: 5.7vw;
+    margin: 5% 0;
+    padding: 0 5%;
+}
+
+.platillo .infoPlatillo .producto{
+    font-size: 6.9vw;
+    font-family: var(--bodoniBold);
+    justify-self: start; 
+}
+
+.platillo .infoPlatillo .precio{
+    font-size: 6.3vw;
+    font-family: var(--bodoniBold);
+}
+
+.platillo .infoPlatillo .descripcion{
+    overflow-y: scroll;
+    height: 4.5em;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #c9c9c9;
+}
+
+.platillo .infoPlatillo .cantidad{
+    height: 50%;
+    max-height: 2em;
+    width: 70%;
+    max-width: 2.2em;
+    text-align: center;
+    font-size: 6.8vw;
+}
+
+.platillo .botonesplatillo{
+    width: 100%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.platillo .botonesplatillo button,
+.platillo .botonesplatillo p{
+    width: 40%;
+    height: 2em;
+}
+
+.platillo .botonesplatillo button{
+    width: 40%;
+    background-color: var(--orangeColor2);
+    color: var(--whiteColor);
+    font-size: 6.9vw;
+}
+
+.platillo .botonesplatillo p{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0;
+    color: #00c70f;
+    font-family: var(--bodoniBold);
+    font-size: 7vw;
+}
+
+
+@media only screen and (min-width: 400px) {
+    
+    .platillo {
+        padding-bottom: 3%;
+    }
+    
+    .platillo .infoPlatillo{
+        font-size: 4.8vw;
+    }
+
+    .platillo .infoPlatillo .producto{
+        font-size: 6.5vw;
+    }
+
+    .platillo .infoPlatillo .precio{
+        font-size: 5.8vw;
+    }
+
+    .platillo .infoPlatillo .descripcion{
+        height: 4em;
+        border-width: 2px;
+    }
+
+    .platillo .infoPlatillo .cantidad{
+        font-size: 6.3vw;
+    }
+
+
+    .platillo .botonesplatillo button,
+    .platillo .botonesplatillo p{
+        width: 40%;
+        height: 2em;
+    }
+
+    .platillo .botonesplatillo button{
+        width: 40%;
+        border-radius: 40px;
+        font-size: 5.8vw;
+    }
+
+    .platillo .botonesplatillo p{
+        font-size: 6vw;
+    }
+    
+}
+
+@media only screen and (min-width: 500px) {
+    
+    .platillo{
+        width: 60%;
+        box-sizing: border-box;
+    }
+    
+    .platillo .infoPlatillo{
+        margin: 2% 0;
+        padding: 0 3%;
+    }
+
+    .platillo .infoPlatillo .producto{
+        font-size: 5.2vw;
+    }
+
+    .platillo .infoPlatillo .precio{
+        font-size: 4.8vw;
+    }
+
+    .platillo .infoPlatillo .descripcion{
+        height: 4em;
+        border-width: 2px;
+        font-size: 4vw;
+    }
+
+    .platillo .infoPlatillo .cantidad{
+        font-size: 5vw;
+    }
+
+
+    .platillo .botonesplatillo button,
+    .platillo .botonesplatillo p{
+        width: 40%;
+        height: 2em;
+    }
+
+    .platillo .botonesplatillo button{
+        width: 40%;
+        border-radius: 40px;
+        font-size: 4.8vw;
+    }
+
+    .platillo .botonesplatillo p{
+        font-size: 5vw;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .platillos{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-evenly;
+    }    
+    
+    .platillo{
+        width: 45%;
+        box-sizing: border-box;
+    }
+    
+    .platillo .infoPlatillo{
+        margin: 2% 0;
+        padding: 0 2%;
+    }
+
+    .platillo .infoPlatillo .producto{
+        font-size: 4vw;
+    }
+
+    .platillo .infoPlatillo .precio{
+        font-size: 3.8vw;
+    }
+
+    .platillo .infoPlatillo .descripcion{
+        height: 4em;
+        border-width: 2px;
+        font-size: 3.2vw;
+    }
+
+    .platillo .infoPlatillo .cantidad{
+        font-size: 3.8vw;
+    }
+    
+    .platillo .botonesplatillo{
+        margin-top: 3%;
+    }
+
+    .platillo .botonesplatillo button,
+    .platillo .botonesplatillo p{
+        width: 45%;
+        font-size: 3.8vw;
+        height: 1.5em;
+    }
+
+    .platillo .botonesplatillo button{
+        width: 40%;
+        border-radius: 40px;
+    }
+
+    .platillo .botonesplatillo p{
+        font-size: 4vw;
+    }
+    
+}
+
+@media only screen and (min-width: 700px) {
+    
+    .platillo {
+        padding-bottom: 2%;
+    }
+    
+    .platillo .infoPlatillo{
+        padding: 0 3%;
+    }
+
+    .platillo .infoPlatillo .descripcion{
+        height: 5em;
+        border-width: 2px;
+        font-size: 3vw;
+    }
+
+    .platillo .infoPlatillo .cantidad{
+        font-size: 4.8vw;
+        width: 80%;
+        height: 1.5em;
+    }
+
+    .platillo .botonesplatillo button,
+    .platillo .botonesplatillo p{
+        width: 45%;
+        font-size: 4.2vw;
+        height: 1.5em;
+    }
+
+    .platillo .botonesplatillo button{
+        width: 40%;
+        border-radius: 40px;
+    }
+
+    .platillo .botonesplatillo p{
+        font-size: 4.3vw;
+    }    
+    
+}
+
+
+@media only screen and (min-width: 800px) {
+    
+
+    .platillo .infoPlatillo .producto{
+        font-size: 3.8vw;
+    }
+
+    .platillo .infoPlatillo .precio{
+        font-size: 3.6vw;
+    }
+
+    .platillo .infoPlatillo .descripcion{
+        height: 5em;
+        border-width: 2px;
+        font-size: 2.9vw;
+    }
+
+    .platillo .infoPlatillo .cantidad{
+        font-size: 4vw;
+    }
+
+    .platillo .botonesplatillo button,
+    .platillo .botonesplatillo p{
+        width: 45%;
+        font-size: 3.5vw;
+        height: 1.4em;
+    }
+
+    .platillo .botonesplatillo button{
+        width: 45%;
+        border-radius: 50px;
+    }
+
+    .platillo .botonesplatillo p{
+        font-size: 3.8vw;
+    } 
+    
+}
+
+@media only screen and (min-width: 900px) {    
+    
+    .platillo{
+        width: 31%;
+        padding-bottom: 1%;
+    }
+
+    .platillo .infoPlatillo .producto{
+        font-size: 3vw;
+
+    }
+
+    .platillo .infoPlatillo .precio{
+        font-size: 2.5vw;
+    }
+
+    .platillo .infoPlatillo .descripcion{
+        height: 4em;
+        border-width: 2px;
+        font-size: 2.4vw;
+    }
+
+    .platillo .infoPlatillo .cantidad{
+        font-size: 2.9vw;
+        width: 70%;
+    }
+
+    .platillo .botonesplatillo button,
+    .platillo .botonesplatillo p{
+        width: 40%;
+        font-size: 2.6vw;
+        height: 1.5em;
+    }
+
+    .platillo .botonesplatillo button{
+        width: 45%;
+        border-radius: 50px;
+    }
+
+    .platillo .botonesplatillo p{
+        font-size: 2.8vw;
+    } 
+    
+}
+
+@media only screen and (min-width: 1000px) {
+    
+    #menuSection{ 
+        display: grid;
+        grid-template-columns: 80% 20%;
+    }
+    
+    .platillo{
+        width: 30%;
+    }
+    
+    .seccion .tituloSection{
+        margin: 1.5% 0;
+    }
+
+    .platillo .infoPlatillo .producto{
+        font-size: 2.2vw;
+
+    }
+
+    .platillo .infoPlatillo .precio{
+        font-size: 2.1vw;
+    }
+
+    .platillo .infoPlatillo .descripcion{
+        height: 4em;
+        border-width: 2px;
+        font-size: 1.8vw;
+    }
+
+    .platillo .infoPlatillo .cantidad{
+        font-size: 3.2vw;
+        width: 70%;
+    }
+
+    .platillo .botonesplatillo button,
+    .platillo .botonesplatillo p{
+        width: 40%;
+        font-size: 2.3vw;
+        height: 1.5em;
+    }
+
+    .platillo .botonesplatillo button{
+        width: 50%;
+        border-radius: 50px;
+    }
+
+    .platillo .botonesplatillo p{
+        font-size: 2.3vw;
+    } 
+
+}
+
+
+@media only screen and (min-width: 1200px) {
+    
+
+    .platillo .infoPlatillo .descripcion{
+        height: 4.5em;
+
+    }
+
+    .platillo .botonesplatillo {
+        margin-top: 5%;
+    }
+
+
+}
+
+
+@media only screen and (min-width: 1400px) {
+    
+    #menuSection{ 
+        display: grid;
+        grid-template-columns: 75% 25%;
+    }
+    
+    .platillo{
+        width: 30%;
+    }
+
+    .platillo .infoPlatillo .producto{
+        font-size: 2.1vw;
+
+    }
+
+    .platillo .infoPlatillo .precio{
+        font-size: 1.9vw;
+    }
+
+    .platillo .infoPlatillo .descripcion{
+        border-width: 2px;
+        font-size: 1.5vw;
+    }
+
+    .platillo .infoPlatillo .cantidad{
+        font-size: 2vw;
+        width: 70%;
+    }
+
+    .platillo .botonesplatillo button,
+    .platillo .botonesplatillo p{
+        width: 40%;
+        height: 1.5em;
+    }
+
+    .platillo .botonesplatillo button{
+        width: 45%;
+        border-radius: 50px;
+        font-size: 1.8vw;
+    }
+
+    .platillo .botonesplatillo p{
+        font-size: 2vw;
+    } 
+
+}
+
+@media only screen and (min-width: 1800px) {
+    
+    #menuSection{ 
+        display: grid;
+        grid-template-columns: 75% 25%;
+    }
+    
+    .platillo{
+        width: 23%;
+    }
+
+    .platillo .infoPlatillo .producto{
+        font-size: 1.7vw;
+
+    }
+
+    .platillo .infoPlatillo .precio{
+        font-size: 1.4vw;
+    }
+
+    .platillo .infoPlatillo .descripcion{
+        height: 4em;
+        border-width: 2px;
+        font-size: 1.3vw;
+    }
+
+    .platillo .infoPlatillo .cantidad{
+        font-size: 1.6vw;
+        width: 70%;
+    }
+
+    .platillo .botonesplatillo button,
+    .platillo .botonesplatillo p{
+        width: 40%;
+        font-size: 1.6vw;
+        height: 1.5em;
+    }
+
+    .platillo .botonesplatillo button{
+        width: 45%;
+        border-radius: 50px;
+    }
+
+    .platillo .botonesplatillo p{
+        font-size: 1.7vw;
+    } 
+
+}
+
+
+
+
+
+
+
+
+
+
+#cuadroOrden{
+    background-color: var(--grayColor);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.cuadro{
+    background-color: var(--orangeColor2);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 6% 0;
+}
+
+#tituloCuadro{
+    width: 100%;
+    font-family: var(--bodoniBold);
+    color: var(--whiteColor);
+    margin-bottom: 5%;
+}
+
+#tituloCuadro h3{
+    width: 100%;
+    font-size: 9vw;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+#ordenes{
+    max-height: 35em;
+    width: 100%;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.orden{
+    width: 90%;
+    color: var(--whiteColor);
+    display: grid;
+    padding: 0 0 2% 0;
+    grid-template-columns: 70% 30%;
+    border-bottom: solid 4px #242424;
+    align-items: center;
+    justify-items: center;
+}
+
+.orden p{
+    font-size: 5vw;
+    margin: 1% 0;
+    padding: 2% 0;
+}
+
+.orden p:nth-child(3){
+
+}
+
+.orden button{
+    font-size: 4.5vw;
+    font-family: var(--bodoniBold);
+    font-weight: bold;
+    margin: 2% 0;
+    background:none;
+    color: var(--whiteColor);
+    border:none;
+/*    box-shadow: .1em .1em .1em var(--grayColor2);*/
+    height: 1.5em;
+    width: 40%;
+}
+
+.orden .itemC{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#botonCuadro{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#botonCuadro a{
+    background-color: var(--whiteColor);
+    color: var(--grayColor2);
+    height: 1.3em;
+    width: 65%;
+    font-size: 8vw;
+    border-radius: 50px;
+    margin-top: 8%;
+    text-decoration: none;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#botonCuadro a:active{
+    text-decoration: underline;
+}
+
+@media only screen and (min-width: 400px) {
+    
+    #tituloCuadro h3{
+        font-size: 8.2vw;
+    }
+    
+    .orden p{
+        font-size: 4.2vw;
+    }
+    
+    .orden button{
+        font-size: 4vw;
+    }
+    
+    #botonCuadro a{
+        font-size: 7.5vw;
+    }
+    
+}
+
+@media only screen and (min-width: 500px) {
+    
+    #tituloCuadro h3{
+        font-size: 7.5vw;
+    }
+    
+    .orden p{
+        font-size: 3.7vw;
+        margin: 1% 0;
+        padding: 2% 0;
+    }
+    
+    .orden button{
+        font-size: 3.8vw;
+    }
+    
+    #botonCuadro a{
+        width: 60%;
+        font-size: 6.5vw;
+    }
+    
+}
+
+@media only screen and (min-width: 600px) {
+    
+    #tituloCuadro h3{
+        font-size: 6.8vw;
+    }
+    
+    .cuadro{
+        width: 75%;
+    }
+    
+    .orden p{
+        font-size: 3vw;
+        margin: 1% 0;
+        padding: 1% 0;
+    }
+    
+    .orden button{
+        font-size: 3.5vw;
+    }
+    
+    #botonCuadro a{
+        font-size: 6vw;
+    }
+    
+}
+
+@media only screen and (min-width: 700px) {
+    
+    #tituloCuadro h3{
+        font-size: 6vw;
+    }
+    
+    .orden p{
+        font-size: 2.8vw;
+    }
+    
+    .orden button{
+        font-size: 3vw;
+    }
+    
+    #botonCuadro a{
+        font-size: 5vw;
+    }
+    
+    #cuadroOrden{
+        justify-content: flex-end;
+    }
+    
+    .cuadro{
+        width: 60%;
+        padding: 4% 0;
+    }
+    
+}
+
+
+@media only screen and (min-width: 800px) {
+    
+    #tituloCuadro h3{
+        font-size: 4.7vw;
+    }
+    
+    .orden p{
+        font-size: 2.3vw;
+    }
+    
+    .orden button{
+        font-size: 2vw;
+        padding: 2% 0;
+    }
+    
+    #botonCuadro a{
+        width: 70%;
+        font-size: 4vw;
+    }
+    
+    .cuadro{
+        width: 40%;
+    }
+    
+}
+
+@media only screen and (min-width: 1000px) {
+    #ordenes{
+        max-height: 40em;
+    }
+    
+    #cuadroOrden{
+        justify-content: center;
+    }
+    
+    .cuadro{
+        height: auto;
+        width: 100%;
+        padding: 0;
+        margin-top: 30%;
+    }
+    
+    #tituloCuadro{
+        padding: 10% 0;
+        margin: 0;
+    }
+    
+    #tituloCuadro h3{
+        font-size: 3vw;
+    }
+    .orden{
+        margin-bottom: 5%;
+    }
+    
+    .orden p{
+        font-size: 1.5vw;
+    }
+    
+    .orden .long{
+        display: none;
+        
+    }
+    
+    .orden button{
+        font-size: 2vw;
+    }
+    
+    #botonCuadro{
+        padding-bottom: 8%;
+    }
+    
+    #botonCuadro a{
+        font-size: 2.5vw;
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+
+    .cuadro{
+        width: 80%;
+        box-shadow: -1em 1em 1em var(--grayColor2);
+    }
+
+}
+
+
+@media only screen and (min-width: 1800px) {
+
+    .cuadro{
+        width: 70%;
+
+    }
+    
+    #tituloCuadro h3{
+        font-size: 2.4vw;
+    }
+    
+    .orden p{
+        font-size: 1.3vw;
+    }
+    
+    .orden button{
+        font-size: 1.6vw;
+    }
+    
+    #botonCuadro{
+        padding: 8% 0;
+    }
+    
+    #botonCuadro a{
+        font-size: 2.1vw;
+        width: 90%;
+        height: 1.6em;
+    }
+
+}
+
+   

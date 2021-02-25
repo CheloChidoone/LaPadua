@@ -1,0 +1,8 @@
+<div class="seccion">
+    [@tituloSeccion]
+    <div class="platillos">
+        
+        [@platillos]
+    
+    </div>
+</div>

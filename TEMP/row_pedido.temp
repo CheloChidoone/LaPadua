@@ -1,0 +1,6 @@
+<div class="orden" data-id="[@idPlato]" data-cantidad="[@cantidad]" >
+     <p class="itemC">[@cantidad]   x   [@producto]</p>
+     <p class="itemC" class="precio">$[@precio]</p>
+     <p class="itemC">[@datos]</p>
+     <button class="itemC eliminarPedido"><span class="short">X&nbsp;</span><span class="long">Eliminar</span></button> 
+</div>

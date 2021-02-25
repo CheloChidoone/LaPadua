@@ -1,0 +1,5 @@
+<tr data-id="[@id]">
+    <td>[@nombre]</td>
+    <td>[@telefono]</td>
+    <td>[@correo]</td>
+</tr>
